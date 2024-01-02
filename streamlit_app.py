@@ -15,7 +15,7 @@ streamlit.dataframe(fruits_to_show )
 
 #display fruitvice api
 streamlit.header("fruityvice fruit advice");
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+kiwi)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+"kiwi")
 streamlit.text(fruityvice_response.json())
 # normalize the data 
 # display normal data(in tables)
